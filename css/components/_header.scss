@@ -23,17 +23,16 @@
 }
 
 .navbar .navbar-nav .nav-link {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #fff;
     margin: 1px;
-    letter-spacing: 3px;
     text-transform: uppercase;
     -webkit-transition: all .4s;
     transition: all .4s;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .navbar .navbar-nav .nav-link.nav-color {
@@ -97,7 +96,7 @@
 }
 
 .nav-scroll .logo-wrapper .logo h2 {
-    font-family: 'Gilda Display', serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 27px;
     font-weight: 400;
     display: block;
@@ -112,7 +111,7 @@
 
 .nav-scroll .logo-wrapper .logo span {
     display: block;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 10px;
     color: #222;
     font-weight: 400;
@@ -131,7 +130,7 @@
 }
 
 .logo-wrapper .logo h2 {
-    font-family: 'Gilda Display', serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 27px;
     font-weight: 400;
     display: block;
@@ -152,7 +151,7 @@
 
 .logo-wrapper .logo span {
     display: block;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 10px;
     color: #fff;
     font-weight: 400;
@@ -291,8 +290,9 @@
     }
 
     .nav-scroll .logo-wrapper {
-        padding: 26px 0 26px 15px;
+        padding: 26px 0 26px 20px;
         background-color: transparent;
+      
     }
 
     .nav-scroll .logo-img {
@@ -318,6 +318,7 @@
         background: transparent;
         margin-top: 10px;
         border: none;
+        padding-right: 20px;
     }
 
     .navbar button:hover {
@@ -333,8 +334,9 @@
     }
 
     .navbar .container {
-        max-width: 100%;
-        padding: 0;
+        
+        max-width: 100% !important;
+        padding: 0 !important;
     }
 
     .navbar .nav-link {
@@ -444,7 +446,7 @@
 }
 
 .header .caption h4 {
-    font-family: 'Barlow Condensed', serif;
+    font-family: 'Barlow', serif;
     ;
     font-size: 15px;
     font-weight: 400;
@@ -460,7 +462,7 @@
 .header .caption h1 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Gilda Display', serif;
+    font-family: 'Prata', serif;
     ;
     font-size: 55px;
     text-transform: uppercase;
@@ -472,11 +474,27 @@
     letter-spacing: 15px;
 }
 
+.header .caption h5 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Barlow', serif;;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.header .caption  .btn{
+    margin: auto;
+    margin-top: 50px;
+}
+
 
 .header .caption h3 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Gilda Display', serif;
+    font-family: 'Prata', serif;
     ;
     font-size: 48px;
     text-transform: uppercase;
@@ -547,4 +565,12 @@ hr {
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 1199px) {
+    .navbar .navbar-nav .nav-link {
+        font-size: 14px;
+        padding-right: 7px;
+        padding-left: 7px;
+    }
 }
