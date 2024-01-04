@@ -23,16 +23,16 @@
 }
 
 .navbar .navbar-nav .nav-link {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Bellota Text', sans-serif;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 700;
     color: #fff;
     margin: 1px;
     text-transform: uppercase;
     -webkit-transition: all .4s;
     transition: all .4s;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .navbar .navbar-nav .nav-link.nav-color {
@@ -96,7 +96,7 @@
 }
 
 .nav-scroll .logo-wrapper .logo h2 {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Bellota Text', sans-serif;
     font-size: 27px;
     font-weight: 400;
     display: block;
@@ -111,7 +111,7 @@
 
 .nav-scroll .logo-wrapper .logo span {
     display: block;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Bellota Text', sans-serif;
     font-size: 10px;
     color: #222;
     font-weight: 400;
@@ -130,7 +130,7 @@
 }
 
 .logo-wrapper .logo h2 {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Bellota Text', sans-serif;
     font-size: 27px;
     font-weight: 400;
     display: block;
@@ -151,7 +151,7 @@
 
 .logo-wrapper .logo span {
     display: block;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Bellota Text', sans-serif;
     font-size: 10px;
     color: #fff;
     font-weight: 400;
@@ -189,7 +189,7 @@
 
 .navbar .dropdown-menu .dropdown-item {
     padding: 5px 0;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Bellota Text', sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #222;
@@ -428,7 +428,7 @@
 .header {
     min-height: 100vh;
     overflow: hidden;
-    font-family: 'Prata', serif;
+    font-family: 'Bellota Text', serif;
 }
 
 .header .caption .o-hidden {
@@ -446,8 +446,6 @@
 }
 
 .header .caption h4 {
-    font-family: 'Barlow', serif;
-    ;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
@@ -464,7 +462,7 @@
     margin-bottom: 20px;
     font-family: 'Prata', serif;
     ;
-    font-size: 55px;
+    font-size: 46px;
     text-transform: uppercase;
     line-height: 1.35em;
     -webkit-animation-delay: .6s;
@@ -472,17 +470,18 @@
     color: #fff;
     font-weight: 400;
     letter-spacing: 15px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .header .caption h5 {
     color: #FFF;
     text-align: center;
-    font-family: 'Barlow', serif;;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 3px;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .header .caption  .btn{
@@ -494,7 +493,7 @@
 .header .caption h3 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Prata', serif;
+    font-family: 'Bellota Text', serif;
     ;
     font-size: 48px;
     text-transform: uppercase;
@@ -572,5 +571,34 @@ hr {
         font-size: 14px;
         padding-right: 7px;
         padding-left: 7px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header .caption h1 {
+        font-size: 36px !important;
+        margin-bottom: 15px;
+        line-height: normal;
+        letter-spacing: 3px;
+    }
+
+    .header .caption h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        letter-spacing: 10px;
+        line-height: 1.35em;
+    }
+
+
+    .header .caption h4 {
+        font-size: 12px;
+    }
+
+    .header .caption p {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .header .caption .butn-light {
+        margin-right: 10px;
     }
 }

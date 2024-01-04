@@ -33,6 +33,8 @@ $(function () {
     "use strict";
     var wind = $(window);
 
+    new WOW().init();
+
     // ScrollIt
     $.scrollIt({
         upKey: 38, // key code to navigate to the next section
@@ -273,7 +275,7 @@ $(document).ready(function () {
         loop: true,
         dots: true,
         margin: 0,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         animateOut: "fadeOut",
         nav: true,
@@ -300,7 +302,7 @@ $(document).ready(function () {
         loop: true,
         margin: 30,
         mouseDrag: true,
-        autoplay: false,
+        autoplay: true,
         dots: false,
         autoWidth: false,
         nav: false,
@@ -405,6 +407,13 @@ $(document).ready(function () {
   
 
 });
+
+const navLinks = document.querySelectorAll('.nav-link')
+const menuToggle = document.getElementById('navbar')
+const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
 
 // Preloader
 $("#preloader").fadeOut(700);
